@@ -1,0 +1,200 @@
+Site    Name                                     Lat       Lon      Start    End       Years   %  AWS
+  23090 ADELAIDE (KENT TOWN)                     -34.9211  138.6216 Feb 1977 Jun 2015   37.5   96   Y
+  23037 ADELAIDE (PARAFIELD PLANT INTRODUCTION C -34.7833  138.6242 Jan 1957 Dec 1988   31.8   99   N
+  23031 ADELAIDE (WAITE INSTITUTE)               -34.9697  138.6331 Sep 1965 Aug 1986   20.4   97   N
+  23000 ADELAIDE (WEST TERRACE / NGAYIRDAPIRA)   -34.9257  138.5832 Jan 1955 Aug 1977   22.7  100   Y
+  23034 ADELAIDE AIRPORT                         -34.9524  138.5196 Aug 1983 Sep 2020   37.2  100   Y
+   9999 ALBANY AIRPORT                           -34.9411  117.8158 Jan 2012 Apr 2016    4.3   95   Y
+   9741 ALBANY AIRPORT COMPARISON                -34.9414  117.8022 Sep 1992 Jan 2012   19.4   99   Y
+  15590 ALICE SPRINGS AIRPORT                    -23.7951  133.8890 Jan 1954 Apr 2016   62.3   99   Y
+  58131 ALSTONVILLE TROPICAL FRUIT RESEARCH STAT -28.8521  153.4556 Aug 1968 Jun 2011   28.6   66   N
+  86147 ASPENDALE CSIRO                          -38.0333  145.1000 Jan 1965 Jun 1982   17.2   98   N
+  15527 AYERS ROCK                               -25.3400  131.0583 Aug 1967 Feb 1978   10.4   92   N
+  33002 AYR DPI RESEARCH STN                     -19.6169  147.3758 Jan 1958 Sep 2000   38.8   77   Y
+  67068 BADGERYS CREEK MCMASTERS F.STN           -33.8683  150.7278 Mar 1967 Jul 1982    7.7   48   N
+  10244 BAKERS HILL                              -31.7469  116.4561 Jan 1966 Jun 1985   19.5   98   N
+  92003 BICHENO (COUNCIL DEPOT)                  -41.8739  148.3036 Jul 1985 Sep 2020   34.0   93   N
+  39006 BILOELA DPI                              -24.3789  150.5164 May 1965 May 1996   29.6   91   N
+  32061 BOTTOM OF PIN GIN HILL                   -17.5333  145.9667 Jan 1965 Aug 1982   16.1   88   N
+  40428 BRIAN PASTURES                           -25.6550  151.7450 Jul 1968 Jan 2008   39.3   98   N
+  35149 BRIGALOW RESEARCH STN                    -24.8353  149.8003 Aug 1968 Jan 1990   19.8   85   N
+  40223 BRISBANE AERO                            -27.4178  153.1142 Jul 1976 Feb 2000   23.7  100   Y
+  40842 BRISBANE AERO                            -27.3917  153.1292 Feb 2000 Sep 2020   20.7   99   Y
+  40214 BRISBANE REGIONAL OFFICE                 -27.4660  153.0270 Jan 1951 May 1983   25.9   79   N
+   3003 BROOME AIRPORT                           -17.9475  122.2352 Apr 1993 Apr 2016   23.1   99   Y
+  14629 BULMAN                                   -13.6667  134.3333 Nov 1970 Sep 1971    0.9   82   N
+  86351 BUNDOORA (LATROBE UNIVERSITY)            -37.7163  145.0453 Sep 1979 Aug 2018   38.7   95   N
+  95003 BUSHY PARK (BUSHY PARK ESTATES)          -42.7097  146.8983 Jan 1957 Mar 1963    1.5   23   Y
+  71030 CABRAMURRA SMHEA                         -35.9333  148.3833 Jan 1965 Jan 1968    3.1  100
+  72091 CABRAMURRA SMHEA                         -35.9383  148.3842 Jan 1962 Apr 1999   34.6   91   N
+  31011 CAIRNS AERO                              -16.8736  145.7458 May 1973 Apr 2016   43.0   99   Y
+   3040 CAMBALLIN                                -17.9903  124.1922 Jun 1971 Aug 1971    0.3   96   N
+  37010 CAMOOWEAL TOWNSHIP                       -19.9225  138.1214 Oct 1963 Mar 1964    0.4   59   Y
+  93036 CAMPBELL TOWN                            -41.9333  147.4833 Jun 1972 Oct 1978    6.1   94   N
+  70351 CANBERRA AIRPORT                         -35.3088  149.2004 Mar 2010 Dec 2012    2.8   88   Y
+  70014 CANBERRA AIRPORT COMPARISON              -35.3049  149.2014 Feb 1978 Feb 2010   32.1  100   Y
+  70282 CANBERRA CITY                            -35.2667  149.1167 Dec 1974 Dec 1977    3.1   97   N
+  70015 CANBERRA FORESTRY                        -35.3000  149.1000 Jan 1957 Apr 1980   23.3  100   N
+ 300017 CASEY                                    -66.2825  110.5231 Feb 1989 Sep 2020   28.6   88   Y
+ 300006 CASEY (THE TUNNEL)                       -66.2833  110.5333 Feb 1984 Jan 1989    5.0  100   N
+  18012 CEDUNA AMO                               -32.1297  133.6976 Nov 1951 Feb 2015   63.3   96   Y
+  14703 CENTRE ISLAND                            -15.7426  136.8192 Jul 1975 Mar 1984    8.8   91   Y
+  29009 CLONCURRY AERO                           -20.6717  140.5083 Mar 1963 May 1975    7.2   58   N
+  48027 COBAR MO                                 -31.4840  145.8294 Jan 1978 Jul 2010   32.3   98   Y
+  59040 COFFS HARBOUR MO                         -30.3107  153.1187 Nov 1967 Jan 2015   47.2   96   Y
+  50102 CONDOBOLIN SOIL CONSERVATION             -33.0833  147.1500 Dec 1965 Jun 1978   11.8   91   N
+  32135 COWLEY JTTRE                             -17.6833  146.1167 Dec 1978 Aug 1982    3.4   87   N
+  63023 COWRA RESEARCH CENTRE (EVANS ST)         -33.8087  148.7071 Apr 1989 Dec 2010   12.3   54   N
+  86375 CRANBOURNE BOTANIC GARDENS               -38.1348  145.2637 Feb 1990 Aug 1998    7.5   81   N
+  91022 CRESSY RESEARCH STATION (MAIN OFFICE)    -41.7217  147.0806 Jan 1965 Sep 1990   25.3   97   N
+  98001 CURRIE POST OFFICE                       -39.9322  143.8486 Aug 1990 Jul 1991    1.0  100   N
+  14618 DALY WATERS                              -16.2529  133.3700 May 1970 Apr 1982    9.2   71   N
+  14626 DALY WATERS AIRSTRIP                     -16.2637  133.3782 Jul 1951 Apr 1970   18.7   98   Y
+   5061 DAMPIER SALT                             -20.7278  116.7483 May 1970 Feb 1992   17.0   61   N
+  82076 DARTMOUTH RESERVOIR                      -36.5353  147.4984 Jan 1975 Sep 1979    4.7   86   N
+  14015 DARWIN AIRPORT                           -12.4239  130.8925 Jul 1951 Sep 2020   69.3   99   Y
+  14161 DARWIN REGIONAL OFFICE                   -12.4667  130.8333 Jan 1967 Dec 1973    7.0   94   N
+ 300000 DAVIS                                    -68.5744   77.9672 Jul 1959 Sep 2020   55.9   90   Y
+  74128 DENILIQUIN (VISITOR INFORMATION CENTRE)  -35.5283  144.9651 Jan 1961 Dec 1961    0.9   90   N
+  74039 DENILIQUIN FALKINER MEMORIAL             -35.3667  145.0500 Feb 1957 Dec 1975   15.8   81   N
+   9637 DENMARK RES.STN.                         -34.9511  117.3700 Jan 1965 Apr 1983   16.3   79   N
+  81013 DOOKIE AGRICULTURAL COLLEGE              -36.3717  145.7048 Jan 1965 Oct 1975   10.8   93   N
+  14901 DOUGLAS RIVER RESEARCH FARM              -13.8345  131.1872 Jan 1973 Aug 1979    1.9   11   Y
+   9538 DWELLINGUP                               -32.7103  116.0594 Jan 1957 Feb 1999   34.7   80   Y
+  85072 EAST SALE                                -38.1156  147.1322 May 1950 Jan 2015   63.7   98   Y
+  91030 ELLIOTT RESEARCH STATION                 -41.0828  145.7725 Jan 1965 Feb 1993   27.6   97   N
+  99005 FLINDERS ISLAND AIRPORT                  -40.0911  148.0024 Jun 1993 Oct 2005   12.3   98   Y
+  91186 FORTHSIDE RESEARCH STATION               -41.2039  146.2650 Jan 1966 Feb 1996   29.7   97   N
+  13017 GILES METEOROLOGICAL OFFICE              -25.0341  128.3010 Oct 1956 Sep 2019   63.0   99   Y
+  56013 GLEN INNES AG RESEARCH STN               -29.6952  151.6935 Jun 1970 Mar 1973    1.9   64   N
+  10554 GLEN LOSSIE                              -33.8167  117.1667 Jan 1965 Jun 1965    0.5  100   N
+  40454 GLENLOGAN FIELD STATION                  -27.8333  153.0000 Jul 1971 May 1980    8.9   98   N
+  14508 GOVE AIRPORT                             -12.2741  136.8201 Sep 1966 Apr 2016   37.1   73   Y
+  75028 GRIFFITH CSIRO                           -34.3183  146.0667 Jan 1962 Dec 1978   16.8   98   N
+  94069 GROVE (COMPARISON)                       -42.9830  147.0771 Nov 1960 Feb 2010   45.8   91   N
+  94220 GROVE (RESEARCH STATION)                 -42.9858  147.0742 Apr 2012 Sep 2020    8.5   98   Y
+  55024 GUNNEDAH RESOURCE CENTRE                 -31.0261  150.2687 Aug 1974 Mar 1994    2.9   14   N
+  91240 GUNNS PLAINS                             -41.3000  145.9833 Sep 1980 Sep 1985    4.3   76   N
+   2012 HALLS CREEK METEOROLOGICAL OFFICE        -18.2291  127.6636 Jan 1970 May 1981   10.9   93   Y
+  90103 HAMILTON RESEARCH STATION                -37.8250  142.0644 Jan 1965 Nov 1999   32.3   89   N
+ 300005 HEARD ISLAND (ATLAS COVE)                -53.0190   73.3918 Mar 1948 Jan 1953    4.9   99   Y
+  41044 HERMITAGE                                -28.2061  152.1003 Jan 1965 Jun 2000   35.3   98   N
+  39122 HERON ISLAND RES STN                     -23.4417  151.9125 Aug 1962 Mar 1979   15.5   83   Y
+  94029 HOBART (ELLERSLIE ROAD)                  -42.8897  147.3278 Jan 1912 Aug 1995   51.8   62   Y
+  94008 HOBART AIRPORT                           -42.8339  147.5033 Sep 1968 May 2020   51.8   99   Y
+  41341 INGLEWOOD TOBACCO RES                    -28.5000  150.9333 Mar 1969 Jun 1985   13.2   79   N
+  56018 INVERELL RESEARCH CENTRE                 -29.7752  151.0820 Jun 1982 Sep 2020   36.3   86   Y
+  71031 ISLAND BEND                              -36.3333  148.4833 Jun 1965 Oct 1967    2.4   98   N
+  14198 JABIRU AIRPORT                           -12.6592  132.8940 Jul 1971 Jun 1990   16.3   77   Y
+  31034 KAIRI RESEARCH STATION                   -17.2186  145.5650 Jan 1965 Oct 2011   45.1   94   N
+  14837 KEEP RIVER NTA                           -15.4167  129.1667 Dec 1970 Jun 1974    3.6   85   N
+  72060 KHANCOBAN SMHEA                          -36.2254  148.1431 Jan 1962 Sep 1994   19.8   59   N
+   2014 KIMBERLEY RES.STATION                    -15.6545  128.7091 Jan 1965 Jul 1969    4.5   97   N
+  26070 KONETTA E&WS                             -37.2667  140.1167 Dec 1970 Jun 1981   10.6   99   N
+  80091 KYABRAM                                  -36.3350  145.0638 Jan 1965 Jan 1980   15.1   98   Y
+  18044 KYANCUTTA                                -33.1337  135.5521 Jan 1957 Nov 1976   19.5   95   N
+  26013 KYBYBOLITE RESEARCH CENTRE               -36.8803  140.9286 Oct 1966 May 1995   28.7   98   N
+  14829 LAJAMANU AIRPORT                         -18.3324  130.6361 Oct 1967 May 1973    4.8   72   Y
+  88023 LAKE EILDON                              -37.2313  145.9124 Apr 1977 Sep 2020   43.5   99   N
+  92085 LAKE LEAKE (CHALET)                      -42.0097  147.7933 May 1971 Sep 1989   17.6   94   N
+  92019 LAKE LEAKE (ELIZABETH RIVER)             -42.0067  147.7975 Oct 1989 Sep 2020   30.6   96   N
+  96015 LAKE ST CLAIR (HEC)                      -42.1000  146.2167 May 1964 Apr 1989   22.9   89   N
+  16081 LAKE TORRENS                             -31.8953  137.7144 Jun 1973 Nov 1975    2.5   95   N
+  14612 LARRIMAH                                 -15.5748  133.2137 Jul 2003 Jun 2012    9.0   93   N
+  91179 LAUNCESTON (RADIO STATION 7EX)           -41.4500  147.1500 Jan 1966 Jan 1972    5.9   95   N
+  91104 LAUNCESTON AIRPORT COMPARISON            -41.5397  147.2033 Jan 1966 Jul 2004   32.9   84   Y
+  87031 LAVERTON RAAF                            -37.8565  144.7565 Oct 1967 Aug 1999   31.9   99   Y
+  23801 LENSWOOD                                 -34.9482  138.8071 Oct 1967 Nov 1996   28.9   99   N
+  96033 LIAWENEE                                 -41.8997  146.6694 Jan 2001 Jun 2012   11.4   87   Y
+  96065 LIAWENEE COMPARISON                      -41.8983  146.6672 Jul 1989 Jan 2001   11.0   92   N
+  61288 LOSTOCK DAM                              -32.3322  151.4595 Jan 1995 Mar 1995    0.3  100   N
+  24024 LOXTON RESEARCH CENTRE                   -34.4390  140.5978 Jun 1984 Sep 2020   36.3   97   Y
+  24023 LOXTON RESEARCH CENTRE                   -34.4333  140.6000 Jan 1965 Jul 1982   16.2   90   N
+  33119 MACKAY M.O                               -21.1172  149.2169 Nov 1983 Apr 2016   32.5   97   Y
+ 300004 MACQUARIE ISLAND                         -54.4994  158.9369 Jun 1948 Sep 2020   62.0   84   Y
+   9573 MANJIMUP                                 -34.2508  116.1450 Jan 1958 Jul 1963    5.5   92   Y
+  61223 MARYVILLE                                -32.9131  151.7500 Jan 1969 Sep 1988    9.4   45   N
+ 300001 MAWSON                                   -67.6017   62.8753 Mar 1955 Sep 2020   65.6   99   Y
+  95011 MAYDENA                                  -42.7636  146.5972 Dec 1966 Apr 1987   14.0   63   N
+  14704 MCARTHUR RIVER MINE AIRPORT              -16.4423  136.0760 Jan 1969 Feb 1995   20.0   64   Y
+  86282 MELBOURNE AIRPORT                        -37.6654  144.8322 Aug 1999 Sep 2020   21.2  100   Y
+  86071 MELBOURNE REGIONAL OFFICE                -37.8075  144.9700 Jan 1955 Dec 1967   13.0  100   Y
+  76026 MERBEIN CSIRO RESEARCH STATION           -34.2133  142.0400 Jan 1965 Oct 1975   10.8  100   N
+  14090 MIDDLE POINT RANGERS                     -12.5782  131.3145 Jan 1965 Nov 1997    9.4   28   N
+  24545 MILANG DEPT OF AGRIC.                    -35.4167  138.9667 Jan 1965 Jan 1969    3.8   87   N
+  76031 MILDURA AIRPORT                          -34.2358  142.0867 Jul 1989 Sep 2020   31.3   97   Y
+  33090 MILLAROO DPI                             -20.0464  147.2739 Jan 1965 Jun 1993   28.4   91   N
+  18052 MINNIPA AGRICULTURAL CENTRE              -32.8361  135.1500 Dec 1977 May 2001   23.5   92   N
+  53115 MOREE AERO                               -29.4898  149.8471 May 1995 Apr 2016   21.0   92   Y
+  53048 MOREE COMPARISON                         -29.4819  149.8383 May 1978 May 1995   17.1  100   N
+  26019 MOUNT BURR FOREST RESERVE                -37.5575  140.4197 Jan 1958 Mar 1965    6.7   91   N
+  26021 MOUNT GAMBIER AERO                       -37.7473  140.7739 Aug 1966 Apr 2016   49.8  100   Y
+  29127 MOUNT ISA AERO                           -20.6778  139.4875 Jun 1975 Apr 2016   40.9   93   Y
+  29126 MOUNT ISA MINE                           -20.7361  139.4817 Jan 1965 Jul 1992   27.5   98   N
+  10152 MURESK INSTITUTE                         -31.7500  116.6833 May 1962 Aug 1976   14.0   92   N
+  40282 NAMBOUR DPI                              -26.6431  152.9392 Jan 1965 Jul 1981   16.3   93   Y
+ 200288 NORFOLK ISLAND AERO                      -29.0389  167.9408 Jan 1945 Apr 2016   70.2   97   Y
+  68076 NOWRA RAN AIR STATION                    -34.9449  150.5450 Sep 1965 Dec 1997   32.3   99   Y
+  23321 NURIOOTPA COMPARISON                     -34.4767  139.0047 Jul 1958 Feb 1999   40.6   99   N
+  23373 NURIOOTPA PIRSA                          -34.4761  139.0056 Mar 1999 Sep 2020   21.6   97   Y
+  17043 OODNADATTA AIRPORT                       -27.5553  135.4456 Jul 1951 Jul 1985   34.1   99   Y
+  63254 ORANGE AGRICULTURAL INSTITUTE            -33.3211  149.0828 Jan 1976 Jul 2020   41.5   87   N
+  26089 PADTHAWAY                                -36.5958  140.4864 Feb 1978 Oct 2000   22.7   97   N
+   7178 PARABURDOO                               -23.2028  117.6692 Apr 1981 Oct 1987    6.5   86   N
+  31076 PARADA RESEARCH STATION                  -17.1467  145.2400 Mar 1965 Mar 1973    7.9   95   N
+  22814 PARNDANA EAST RESEARCH STATION           -35.8000  137.3333 Jan 1962 Nov 1984   21.6   93   N
+   9592 PEMBERTON                                -34.4478  116.0433 May 1970 May 1982   11.8   94   N
+   9021 PERTH AIRPORT                            -31.9275  115.9764 Jan 1993 Sep 2020   27.8  100   Y
+   9034 PERTH REGIONAL OFFICE                    -31.9556  115.8697 Jan 1898 Apr 1992   94.2  100   N
+  18181 PORT LINCOLN (TOD RIVER)                 -34.4906  135.8511 Jan 1973 Dec 1991   19.0   98   N
+  15666 RABBIT FLAT                              -20.1823  130.0148 Nov 1996 Apr 2016   19.0   94   Y
+  15548 RABBIT FLAT                              -20.1883  130.0161 Aug 1969 Nov 1996   26.6   95   N
+  67033 RICHMOND RAAF                            -33.6022  150.7794 Nov 1975 Oct 1994   19.0  100   N
+  23020 ROSEWORTHY AGRIC COLLEGE                 -34.5267  138.6883 Oct 1972 Sep 1984   11.2   91   Y
+  82039 RUTHERGLEN RESEARCH                      -36.1048  146.5094 Mar 1975 Jan 1998   22.5   94   Y
+  97047 SAVAGE RIVER MINE                        -41.4892  145.2083 Aug 1966 Nov 1989   19.3   76   N
+  92094 SCAMANDER                                -41.4639  148.2644 Mar 1974 May 1990   16.0   96   N
+  61089 SCONE SCS                                -32.0632  150.9271 Jan 1965 Dec 2018   53.0   80   N
+  86104 SCORESBY RESEARCH INSTITUTE              -37.8710  145.2561 Jan 1965 Dec 1979   15.0   97   Y
+  91246 SCOTTSDALE (FORESTRY)                    -41.1608  147.5156 Feb 1987 Jul 1987    0.4   83   N
+  91116 SCOTTSDALE (KRAFT FOODS)                 -41.1500  147.5167 Dec 1963 Feb 1971    7.2   97   N
+  91219 SCOTTSDALE (WEST MINSTONE ROAD)          -41.1708  147.4883 Mar 1971 Sep 2020   43.8   87   Y
+  32037 SOUTH JOHNSTONE EXP STN                  -17.6053  145.9972 Jan 1965 Mar 2000   34.6   93   Y
+  71029 SPENCERS CREEK                           -36.4333  148.3500 Jan 1962 Mar 1967    4.8   89   N
+   9109 STONEVILLE RESEARCH STN                  -31.8531  116.1783 Jun 1965 Dec 1983   17.6   93   N
+  97082 STRAHAN (LODGE)                          -42.1514  145.3028 Mar 1992 Jul 1994    2.3   89   N
+  97067 STRAHAN (VIVIAN STREET)                  -42.1558  145.3267 Oct 1990 Dec 1991    1.3   95   N
+  97072 STRAHAN AERODROME                        -42.1550  145.2908 Jul 1994 Jun 2003    1.1    5   Y
+  97048 STRATHGORDON (THE KNOB)                  -42.7333  145.9833 Apr 1967 Dec 1969    2.5   83   N
+  97053 STRATHGORDON VILLAGE                     -42.7681  146.0461 Dec 1969 Dec 2015   45.0   92   N
+  26082 STRUAN                                   -37.0951  140.7911 Apr 1974 Dec 1981    6.3   73   N
+  92038 SWANSEA POST OFFICE                      -42.1236  148.0731 Jun 1957 Dec 1980   22.3   91   N
+  66062 SYDNEY (OBSERVATORY HILL)                -33.8607  151.2050 Jan 1955 Apr 1992   37.3  100   Y
+  66037 SYDNEY AIRPORT AMO                       -33.9465  151.1731 Dec 1976 Sep 2020   43.3   98   Y
+  55327 TAMWORTH (OXLEY LANE)                    -31.1259  150.8323 Jan 1993 Aug 2014    6.8   31   N
+  55054 TAMWORTH AIRPORT                         -31.0867  150.8467 May 1978 Dec 1992   14.7   97   N
+  81049 TATURA INST SUSTAINABLE AG               -36.4378  145.2672 Jan 1965 Apr 2001   36.3   94   Y
+  33047 TE KOWAI EXP STN                         -21.1642  149.1192 Jan 1964 Oct 1983   19.3   78   N
+  15135 TENNANT CREEK AIRPORT                    -19.6423  134.1833 Aug 1969 May 2017   47.8   98   Y
+  91099 TEWKESBURY                               -41.2314  145.7061 Jan 1965 Mar 1989   22.1   90   N
+  14925 TIPPERARY                                -13.7352  131.0437 May 1969 Nov 1969    0.5   81   N
+  86142 TOOLANGI (MOUNT ST LEONARD DPI)          -37.5720  145.5014 Jan 1965 Jul 2001   32.9   77   N
+  32040 TOWNSVILLE AERO                          -19.2483  146.7661 Oct 1957 Apr 2016   58.3   99   Y
+  40082 UNIVERSITY OF QUEENSLAND GATTON          -27.5436  152.3375 Sep 1974 Apr 1984    9.2   90   Y
+  40457 WACOL DPI                                -27.5767  152.9042 Jan 1977 Feb 1980    3.2   85   N
+  72150 WAGGA WAGGA AMO                          -35.1583  147.4575 Jan 1986 Apr 2016   30.3  100   Y
+  74114 WAGGA WAGGA RESEARCH CENTRE              -35.1311  147.3091 Jun 1965 Feb 1981   11.3   71   N
+  24041 WAIKERIE (GOLDEN HEIGHTS)                -34.1944  139.9378 Aug 1968 Aug 1971    3.1   81   N
+  31108 WALKAMIN RESEARCH STATION                -17.1347  145.4281 Jul 1968 Sep 2012   44.3   98   N
+  14513 WALLABY BEACH                            -12.1933  136.7100 Mar 1979 Aug 1987    8.3   89   N
+  41525 WARWICK                                  -28.2061  152.1003 Jun 2000 Feb 2019   18.7   56   Y
+  27045 WEIPA AERO                               -12.6778  141.9208 Mar 1993 Apr 2015   22.2   98   Y
+  27042 WEIPA EASTERN AVE                        -12.6267  141.8836 Jan 1959 Dec 1992   29.6   81   N
+  65034 WELLINGTON (D&J RURAL)                   -32.5635  148.9503 Mar 2005 Sep 2020   15.6   99   N
+  65035 WELLINGTON RESEARCH CENTRE               -32.5059  148.9708 Jan 1965 Feb 2005   39.8   97   N
+  87065 WERRIBEE RESEARCH FARM                   -37.9000  144.6833 Jan 1965 Aug 1979   14.3   97   N
+ 300003 WILKES                                   -66.2500  110.5833 Feb 1960 Dec 1964    2.7   49
+  61078 WILLIAMTOWN RAAF                         -32.7939  151.8364 Apr 1957 Apr 2016   59.0   94   Y
+   9642 WOKALUP                                  -33.1328  115.8794 Feb 1965 May 1992   24.4   86   N
+  16001 WOOMERA AERODROME                        -31.1558  136.8054 Jan 1951 Jun 2017   65.8   95   Y
+  85103 YALLOURN SEC                             -38.1858  146.3317 Jan 1957 Sep 1986   29.4   98   N
