@@ -1,6 +1,6 @@
 # Who benefits from the solar boom?
 This visualisation explores Australia's solar divide.
-It displays the distribution of solar installations accross small areas (postcodes), and correlations with factors such as household income, size and tenure.
+It displays the distribution of solar installations accross small areas (postcodes), and correlations with factors such as solar exposure, household income and household tenure.
 ### Data sources
 - Geographic boundaries: [Australian Bureau of Statistics, catalogue 1270.0.55.003 (Australian Statistical Geography Standard)](https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.003July%202016)
 - Household demography: [Australian Bureau of Statistics, census 2016](https://www.abs.gov.au/census)
