@@ -21,9 +21,10 @@ postcodes = list(postcodes["0"])
 
 # empty list to capture scraped income data
 median_incomes = []
+household_incomes = pd.DataFrame(index=postcodes)
 
 # begin scraping loop
-for postcode in postcodes:
+for postcode in postcodes[125:]:
     # convert postcode to correct string format
     postcode = "0" * (4 - len(str(postcode))) + str(postcode)
 
@@ -33,25 +34,42 @@ for postcode in postcodes:
     # input postcode to search field
     search_field = driver.find_element_by_css_selector(".gwt-SearchWidget-Container input")
     search_field.clear()
-    search_field.send_keys(postcode)
+    search_field.send_keys(postcode[0])
+    time.sleep(.25)
+    search_field.send_keys(postcode[1])
+    time.sleep(.25)
+    search_field.send_keys(postcode[2])
+    time.sleep(.25)
+    search_field.send_keys(postcode[3])
+    time.sleep(.25)
 
     # get postcode pop-up suggestion
     try:
         suggested_postcode = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, ".suggestion-state"))
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".suggestion-hilite-prefix"))
         )
-    finally:
-        # refill search input and submit
-        suggested_postcode.click()
-        driver.find_element_by_class_name("gwt-SearchWidget-Button").click()
-
-        # collect median household income data
-        income = driver.find_element_by_css_selector(".qsDwelling tbody tr:nth-child(3) td").get_attribute("innerText")
-        print(postcode, "—", income)
-        median_incomes.append(income)
+        if suggested_postcode.get_attribute("innerText") == postcode:
+            # refill search input and submit
+            suggested_postcode.click()
+            driver.find_element_by_class_name("gwt-SearchWidget-Button").click()
+            try:
+                element = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, ".qsDwelling tbody tr:nth-child(3) td"))
+                )
+                income = element.get_attribute("innerText")
+                print(postcode, "—", income)
+                median_incomes.append(income)
+            except:
+                print("failure 2:", postcode, "— null")
+                median_incomes.append("NaN")
+        else:
+            print("failure 3:", postcode, "— null")
+            median_incomes.append("NaN")
+    except:
+        print("failure 1:", postcode, "— null")
+        median_incomes.append("NaN")
 
 # end scraping, save data
 driver.close()
-household_incomes = pd.DataFrame(index=postcodes)
 household_incomes["income"] = median_incomes
 household_incomes.to_csv("./solarData/medianIncomes.csv", index_label="postcode")
