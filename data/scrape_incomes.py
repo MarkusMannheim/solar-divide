@@ -24,7 +24,7 @@ median_incomes = []
 household_incomes = pd.DataFrame(index=postcodes)
 
 # begin scraping loop
-for postcode in postcodes[125:]:
+for postcode in postcodes:
     # convert postcode to correct string format
     postcode = "0" * (4 - len(str(postcode))) + str(postcode)
 

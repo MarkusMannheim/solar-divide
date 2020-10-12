@@ -40,16 +40,14 @@ fs.readFile("poa.geojson", "utf8", function(error, data) {
         tempStations.sort(function(a, b) {
           return d3.ascending(a.distance, b.distance);
         });
-        console.log(d, "—", tempStations[0].distance, "radians");
         let solarExposure = tempStations[0].solarExposure;
         solarCodes.push({
           postcode: postcode,
           solarExposure: solarExposure
         });
       });
-
-      fs.writeFile("solar_exposire", d3.csvFormat(solarCodes), function(error) {
-        console.log(solarCodes);
+      fs.writeFile("./solarData/solar_exposure.csv", d3.csvFormat(solarCodes), function(error) {
+        console.log("solar_exposure.csv written");
       });
     });
   });

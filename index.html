@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155991615-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-155991615-1');
+    </script>
+    <!-- my stuff -->
+    <meta charset="utf-8">
+    <meta name="author" content="Markus Mannheim">
+    <title>The solar divide</title>
+    <meta name="description" content="Distribution of rooftop solar installations across Australia.">
+    <meta name="keywords" content="solar, energy, photovoltaic, cells, electricity, rooftop, australia, equity, distribution, dataviz, unsw">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page data for scrapers -->
+    <meta property="og:title" content="The solar divide">
+    <meta property="og:description" content="Distribution of rooftop solar installations across Australia.">
+    <meta property="og:image" content="https://markusmannheim.github.io/solar-divide/resources/solarDivide.jpg">
+    <meta property="og:url" content="https://markusmannheim.github.io/solar-divide/">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@MarkusMannheim">
+    <meta property="twitter:creator" content="@MarkusMannheim">
+    <!-- Initial scripts -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="./scripts/intro.js"></script>
+    <script src="./scripts/charts.js"></script>
+    <script src="./scripts/geo.js"></script>
+    <link href="./resources/style.css" rel="stylesheet">
+    <link href="./resources/abcLogo64.png" rel="icon">
+  </head>
+  <body>
+    <!-- Initial page layout -->
+    <div id="container"></div>
+    <script>
+      // colours
+      green = d3.hsl("#149B67");
+      blue = d3.hsl("#1DB3C6");
+      yellow = d3.hsl("#F4F733");
+      red = d3.hsl("#EF4124");
+      grey = d3.hsl("#7C6E6D");
+      // page elements
+      container = d3.select("#container");
+      dimensions = document.body.getBoundingClientRect();
+      width = dimensions.width;
+      height = dimensions.height;
+      centre = [width / 2, height / 2];
+      // load all data
+      Promise.all([
+        d3.csv("./data/solarData/monthly_installs.csv"),
+        d3.json("./data/countries.topojson"),
+        d3.json("./data/stationSolarData.geojson"),
+        d3.json("./data/postcodes.topojson")
+      ]).then(function(data) {
+        monthlyInstallData = data[0]
+          .map(function(d, i) {
+            return {
+              month: new Date(d.month),
+              installations: +d.installations,
+              cumulative: +d.cumulative,
+            };
+          });
+        worldData = topojson.feature(data[1], data[1].objects.countries);
+        stationData = data[2];
+        postcodeData = topojson.feature(data[3], data[3].objects.postcode);
+        postcodeData.features = postcodeData
+          .features
+          .map(function(d) {
+            if (d.properties.installRate > 1) d.properties.installRate = 1;
+            return d;
+          });
+        intro();
+      });
+    </script>
+  </body>
+</html>
