@@ -112,6 +112,15 @@ body {
 .plot {
   fill: #EF4124;
 }
+.bar {
+  fill: #EF4124;
+}
+.scatter {
+  fill: #1DB3C6;
+  stroke: #333;
+  stroke-width: .5;
+  opacity: .25;
+}
 .axisLabel {
   fill: #666;
   font-weight: bold;
@@ -131,6 +140,17 @@ body {
   padding: 5px;
   border-radius: 5px;
   font-weight: bold;
+  opacity: 0;
+  box-shadow: 1px 1px 3px #333;
+}
+.rSquared {
+  position: absolute;
+  background-color: #149B67;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "ABCSans Black";
+  font-size: 1.25rem;
   opacity: 0;
   box-shadow: 1px 1px 3px #333;
 }
@@ -187,4 +207,30 @@ body {
 #legendAxisGroup .tick text {
   fill: #333;
   font-size: .85rem;
+}
+.recommendations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  transform: translate(-150px, -50%);
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  box-shadow: 2px 2px 5px #333;
+  opacity: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+li:last-child {
+  margin-bottom: 0rem;
+}
+li span {
+  font-family: "ABCSans Black";
 }

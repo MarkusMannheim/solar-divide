@@ -1,12 +1,16 @@
 function drawPlanet() {
+  zoom = d3.zoom()
+    .on("zoom", zoomed);
   planetSequence = 0;
   planet = container
     .append("svg")
       .attr("id", "planet")
-      .on("click", clickPlanet);
+      .on("click", clickPlanet)
+      .call(zoom);
   logo.style("background", "none")
     .raise()
     .style("pointer-events", "none");
+  ozCentre = [-132, 26];
   projection = d3.geoOrthographic()
     .translate(centre)
     .rotate([132, -26])
@@ -37,7 +41,7 @@ function drawPlanet() {
       .duration(4000)
       .attrTween("d", function(d) {
         let scaleTransition = d3.interpolate(0, maxScale * 4);
-        let rotateTransition = d3.interpolate([0, 0], [-132, 26]);
+        let rotateTransition = d3.interpolate([0, 0], ozCentre);
         return function(t) {
           projection.scale(scaleTransition(t))
             .rotate(rotateTransition(t));
@@ -163,6 +167,18 @@ function clickPlanet() {
   } else if (planetSequence == 5) {
     clearLegend();
     showInstallRate();
+  } else if (planetSequence == 6) {
+    clearLegend();
+    zoomToArea("6165");
+    d3.timeout(function() {
+      zoomToArea("3978")
+    }, 4000);
+    d3.timeout(function() {
+      zoomToArea("4553")
+    }, 8000);
+    d3.timeout(zoomReset, 12000);
+  } else if (planetSequence == 7) {
+    removePlanet();
   }
 }
 
@@ -196,9 +212,10 @@ function showExposure() {
     .style("opacity", 1);
   range = d3.extent(postcodeData.features.map(function(d) { return d.properties.solar; }));
   colourScale.domain([range[0], (range[0] + range[1]) / 2, range[1]]);
-  postcodes.transition()
-    .duration(1000)
-    .style("fill", function(d) { return colourScale(d.properties.solar); });
+  postcodes.style("fill", "#e6e6e6")
+    .transition()
+      .duration(1000)
+      .style("fill", function(d) { return colourScale(d.properties.solar); });
   legendScale.domain(range);
   buildLegend();
   legendTitle.text("solar exposure (MJ/m²)")
@@ -217,6 +234,9 @@ function showIncome() {
   range = d3.extent(postcodeData.features.map(function(d) { return d.properties.income; }));
   colourScale.domain([range[0], (range[0] + range[1]) / 2, range[1]]);
   postcodes.transition()
+    .duration(1000)
+    .style("fill", "#e6e6e6")
+  .transition()
     .duration(1000)
     .style("fill", function(d) { return colourScale(d.properties.income); });
   legendScale.domain(range);
@@ -240,6 +260,9 @@ function showOwnership() {
   colourScale.domain([range[0], (range[0] + range[1]) / 2, range[1]]);
   postcodes.transition()
     .duration(1000)
+    .style("fill", "#e6e6e6")
+  .transition()
+    .duration(1000)
     .style("fill", function(d) { return colourScale(d.properties.ownership); });
   legendScale.domain(range);
   d3.timeout(function() {
@@ -262,6 +285,9 @@ function showInstallRate() {
   colourScale.domain([range[0], (range[0] + range[1]) / 2, range[1]]);
   postcodes.transition()
     .duration(1000)
+    .style("fill", "#e6e6e6")
+  .transition()
+    .duration(1000)
     .style("fill", function(d) { return colourScale(d.properties.installRate); });
   legendScale.domain(range);
   d3.timeout(function() {
@@ -270,4 +296,86 @@ function showInstallRate() {
     legendAxis.ticks(5, ".0%");
     drawLegend();
   }, 1000);
+}
+
+function zoomToArea(postcode) {
+  let feature = postcodeData
+    .features
+    .filter(function(d) { return d.properties.postcode == postcode; })[0];
+  let centroid = projection(d3.geoCentroid(feature));
+  planet.transition()
+    .duration(3000)
+    .call(zoom.transform, d3.zoomIdentity
+      .translate(width / 2, height / 2)
+      .scale(20)
+      .translate(-centroid[0], -centroid[1])
+    );
+}
+
+function zoomReset() {
+  planet.transition()
+    .duration(3000)
+    .call(zoom.transform, d3.zoomIdentity
+      .translate(0, 0)
+      .scale(1)
+    );
+}
+
+function zoomed() {
+  change = d3.event.transform;
+  globe.attr("transform", "translate(" + change.x + ", " + change.y + ") scale(" + change.k + ")");
+  graticule.style("stroke-width", 1 / change.k);
+  postcodes.style("stroke-width", .5 / change.k);
+}
+
+function removePlanet() {
+  d3.selectAll("#planet, .title, #legend").transition()
+    .duration(2000)
+    .style("opacity", 0)
+    .remove()
+  d3.timeout(chartScatter, 2000);
+}
+
+function finalMap() {
+  planet = container
+    .append("svg")
+      .attr("id", "planet")
+      .call(zoom);
+  logo.raise();
+  projection = d3.geoOrthographic()
+    .translate(centre)
+    .rotate(ozCentre)
+    .fitExtent([[100, 100], [width - 150 , height - 75]], {type: "Sphere"});
+  maxScale = projection.scale();
+  projection.scale(maxScale * 4);
+  globe = planet
+    .append("g")
+      .attr("id", "globe");
+  sphere = globe
+    .append("path")
+      .datum({type: "Sphere"})
+      .attr("id", "sphere");
+  graticule = globe
+    .append("path")
+      .datum(d3.geoGraticule())
+      .attr("id", "graticule");
+  land = globe
+    .append("path")
+      .datum(worldData)
+      .attr("id", "land");
+  postcodes = globe
+    .selectAll(".postcode")
+      .data(postcodeData.features)
+    .enter().append("path")
+      .classed("postcode", true);
+  planet.selectAll("path")
+    .style("opacity", 0)
+    .attr("d", path)
+    .transition(2000)
+      .style("opacity", 1);
+  title = container
+    .append("div")
+      .classed("title", true)
+  showInstallRate();
+
 }
