@@ -7,8 +7,8 @@
 }
 @font-face {
   font-family: "ABCSans Black";
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
   src: local("ABCSans Black"), url("./abcsans-black.woff") format("woff");
 }
 @font-face {
@@ -23,11 +23,17 @@ b: #1DB3C6;
 y: #F4F733;
 r: #EF4124;
 g: #7C6E6D;
+tint-1: #333;
+tint-2: #666;
+tint-3: #999;
+tint-4: #ccc;
+tint-5: #e6e6e6;
+tint-6: #f2f2f2;
 */
 :root {
   font-size: 1em;
-  font-family: "ABCSans Regular", "Arial", sans-serif;
-  color: #1C1C1C;
+  font-family: "ABCSans Regular";
+  color: #333;
 }
 body {
   margin: 0;
@@ -37,24 +43,148 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
+}
+#container {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  position: absolute;
+  top: 2.5rem;
+  left: 640px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "ABCSans Black";
+  font-size: 1.5rem;
+  opacity: 0;
+  padding: .5rem;
+  background-color: #666;
+  color: white;
+  box-shadow: 2px 2px 5px #333;
+}
+/* intro */
+#logo {
+  background-color: #333;
+  position: absolute;
 }
 #logo text {
   fill: #EF4124;
   font-size: 5rem;
+  text-anchor: middle;
 }
-#logo #solar {
+#logo #logoSolar {
   font-family: "ABCSans Black";
-  text-anchor: end;
+  clip-path: url(#logoClipTop);
 }
-#logo #divide {
+#logo #logoDivide {
   font-family: "ABCSans Light";
+  alignment-baseline: hanging;
+  clip-path: url(#logoClipBottom);
 }
 #logo circle {
   stroke: #EF4124;
-  stroke-width: .5;
+  stroke-width: 0;
   fill: #F4F733;
 }
-.clipSvg {
-  overflow: hidden;
+/* charts */
+#chart {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+}
+#chartGroup {
+  clip-path: url(#chartClip);
+}
+.axisGroup {
+  opacity: 0;
+}
+.axisGroup .tick text {
+  fill: #666;
+  font-size: .9rem;
+}
+.axisGroup .tick line {
+  stroke: #999;
+  stroke-dasharray: 3 3;
+}
+.axisGroup .domain {
+  stroke: #999;
+}
+.plot {
+  fill: #EF4124;
+}
+.axisLabel {
+  fill: #666;
+  font-weight: bold;
+  font-size: 1rem;
+  text-anchor: middle;
+}
+.chartAnnotation {
+  fill: none;
+  stroke-width: 4;
+  stroke: #149B67;
+  opacity: 0;
+}
+.annotationText {
+  position: absolute;
+  background-color: #149B67;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0;
+  box-shadow: 1px 1px 3px #333;
+}
+/* geo data */
+#planet {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+}
+#sphere {
+  fill: none;
+}
+#land {
+  fill: #e6e6e6;
+}
+#graticule {
+  fill: none;
+  stroke: #999;
+  stroke-dasharray: 3 2
+}
+.station {
+  fill: white;
+  stroke: #333;
+  stroke-width: .5;
+  opacity: 0;
+}
+.postcode {
+  fill: #e6e6e6;
+  stroke: #666;
+  stroke-width: .5;
+  opacity: 0;
+}
+/* legend */
+#legend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+#legend rect {
+  fill: url(#legendGradient);
+  stroke: #333;
+}
+#legendTitle {
+  text-anchor: end;
+  font-size: .9rem;
+}
+#legendAxisGroup .domain {
+  stroke: none;
+}
+#legendAxisGroup .tick line {
+  stroke: #333;
+}
+#legendAxisGroup .tick text {
+  fill: #333;
+  font-size: .85rem;
 }
